@@ -9,6 +9,7 @@
     border: 1px solid #bbb;
     padding: 1rem;
     background-color: #e6f2ff;
+    text-align: center;
   }
   header {
     max-width: 640px;
@@ -21,7 +22,7 @@
   
   main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
   
