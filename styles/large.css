@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Zeyada&display=swap');
+
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+    body {
+        font-family: 'Karla', sans-serif;
+        font-size: 25px;
+        line-height: 1.6;
+        color: #333; 
+        background-color: #f0f0f0; 
+    }
+
+    header {
+        background-color: rgb(10, 61, 10); 
+        text-align: center;
+        padding: 20px;
+    }
+
+    header img {
+        display: inline-block; 
+        vertical-align: middle; 
+
+    }
+
+    header h1 {
+        display: inline-block;
+        color: #fff; 
+        margin-left: 10px;
+        font-family: 'Zeyada', cursive;
+        font-size: 70px;
+    
+    }
+    h2 {
+        grid-column: 1/4;
+    }
+
+    nav {
+        background-color: #c0f0bc; 
+        text-align: center; 
+        padding: 20px;
+        align-items: center;
+
+
+    }
+
+    nav ul {
+        list-style-type: none; 
+        padding: 10px; 
+    }
+
+
+    nav a {
+        text-decoration: none; 
+        color: #030c03;
+        font-size: 35px;
+        font-weight: 700; 
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto; 
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .card {
+    
+        padding: 20px;
+        background-color: #c0f0bc; 
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color:rgb(10, 61, 10); 
+        color: #fff; 
+        margin-top: 50px;
+    }
+
+}

@@ -26,10 +26,13 @@ header h1 {
     color: #fff; 
     margin-left: 10px;
     font-family: 'Zeyada', cursive;
-    font-size: 70px;
+    font-size: 50px;
    
 }
-
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
 
 nav {
     background-color: #c0f0bc; 
