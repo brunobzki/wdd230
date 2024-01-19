@@ -6,10 +6,11 @@
    main, footer {
     max-width: 640px;
     margin: 1rem auto;
-    border: 1px solid #bbb;
+    border: 1px solid #3d3a34;
     padding: 1rem;
-    background-color: #e6f2ff;
+    background-color: #f0dab2;
     text-align: center;
+    border-radius: 8px;
   }
   header {
     max-width: 640px;
