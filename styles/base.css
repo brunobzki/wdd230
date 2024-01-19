@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #01031a; 
+    background-color: rgb(10, 61, 10); 
     text-align: center;
     padding: 20px;
 }
@@ -27,14 +27,17 @@ header h1 {
     margin-left: 10px;
     font-family: 'Zeyada', cursive;
     font-size: 70px;
+   
 }
 
 
 nav {
-    background-color: #ad9882; 
+    background-color: #c0f0bc; 
     text-align: center; 
-    color: white;
     padding: 20px;
+    align-items: center;
+    
+    
 }
 
 nav ul {
@@ -45,7 +48,7 @@ nav ul {
 
 nav a {
     text-decoration: none; 
-    color: #fff; 
+    color: #030c03; 
 }
 
 main {
@@ -58,7 +61,7 @@ main {
 .card {
    
     padding: 20px;
-    background-color: #ad9882; 
+    background-color: #c0f0bc; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
@@ -67,7 +70,7 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background-color:#0a0c22; 
+    background-color:rgb(10, 61, 10); 
     color: #fff; 
     margin-top: 50px;
 }
