@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@200&family=Pridi:wght@300&family=Rock+Salt&display=swap');
+
+.container{
+    display: grid;
+
+}
+.banner{
+    color: white;
+    font-size: 50px;
+}
+body {
+    font-family: 'Livvic', sans-serif;
+    font-size: 25px;
+    line-height: 1.6;
+    color: black; 
+    background-color: #f0f0f0; 
+    font-family: Roboto, helvetica, sans-serif;
+
+}
+
+header {
+    background-color: #0d057a; 
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: navy;
+    grid-column: 1/3;
+    text-align: left;
+}
+header h1 {
+    display: inline-block;
+    color: #fff; 
+    margin-left: 10px;
+    font-family: 'Zeyada', cursive;
+    font-size: 40px;
+
+}
+article p {
+    text-align: justify;
+}
+main {
+    grid-gap: 32px;     
+    margin: center; 
+    display: grid;
+}
+
+a {
+    text-decoration: line; 
+    color: rgb(15, 0, 111);
+    font-size: 25px;
+    font-weight: 400; 
+    padding: 10px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0d057a; 
+    color: #fff; 
+    margin-top: 20px;
+}
+.card {
+        
+    background-color:#afd7f8; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding:10px;
+    font-weight: 400;
+}
+h3{
+    background-color: #0d057a;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    border-radius: 3px;
+    
+}
+img{
+    width:100%; 
+    height: auto;
+}
+p{
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+@media (min-width: 1076px) {
+ 
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1075px){
+
+    main {
+        
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;  
+    }
+    section:nth-child(2) {
+        display: block;
+    }
+    section:nth-child(3) {
+        grid-column: span 2;
+    }
+   
+  
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    main {
+        
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+      
+    }
+}
