@@ -52,7 +52,6 @@
     }
     .button-box{
         align-items: center;
-        display:flexbox;
     }
     a.book{
         margin:0;
