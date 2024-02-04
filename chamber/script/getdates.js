@@ -58,7 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 zoom: 10
                 
             });
-            
+             // Obtener enlaces de copyright del mapa
+          const mapContainer = map.getContainer();
+          const copyrightLinks = mapContainer.querySelectorAll('.mapboxgl-ctrl-attrib a');
+
+          // Hacer algo con los enlaces de copyright (por ejemplo, imprimirlos en la consola)
+          copyrightLinks.forEach(link => {
+            console.log(link.href);
+          });
             
             weatherInfo.innerHTML = weatherHTML;
           })

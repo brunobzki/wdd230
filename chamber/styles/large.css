@@ -50,6 +50,16 @@
        
     
     }
+    .button-box{
+        align-items: center;
+        display:flexbox;
+    }
+    a.book{
+        margin:0;
+        font-size: 25px;
+        padding: 0;
+        align-items: center;
+    }
     footer{
         background-color: rgb(236, 124, 132);
         color: #FFE4D1;

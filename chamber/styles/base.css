@@ -15,7 +15,7 @@
 * {
     padding: 0;
     margin: 0 auto;
-    
+
 }
 
 #content {
@@ -23,12 +23,14 @@
     max-width: 1440px;
     box-sizing: border-box;
     background-blend-mode: color;
-    background:#F6E8EA
+    background: #ebe6e6
 }
+
 #menu {
     display: none;
-    
+
 }
+
 nav ul {
     display: flex;
 }
@@ -37,10 +39,16 @@ header {
     display: grid;
     grid-template-columns: 100px auto;
 }
-.navigation ul {
-    list-style-type: none; 
-    padding: 10px; 
+h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: var(--heading-font);
 }
+.navigation ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
 .navigation {
     background-color: #22181C;
     display: flex;
@@ -50,16 +58,17 @@ header {
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
 .open a {
-	display: block;
+    display: block;
 }
 
 #menu::before {
-	content: "☰";
+    content: "☰";
 }
 
 #menu.open::before {
-	content: "✖";
+    content: "✖";
 }
 
 a {
@@ -96,6 +105,7 @@ img.logo {
     margin: 50px auto 50px;
     overflow: hidden;
     border-radius: 20px;
+    z-index: 22;
 }
 
 .slider-box ul {
@@ -184,7 +194,7 @@ img.logo {
 }
 
 main {
-    display: grid ;
+    display: grid;
     margin-top: 40px;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -214,14 +224,14 @@ footer {
 }
 
 .button-box {
-    background-color: #4CAF50;
+    background-color: var(--accent1-color);
     border-radius: 7px;
-    height: 40px;
-    width: 200px;
-    margin-left: 250px;
-
-
-
+    height: 50px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -244,7 +254,7 @@ h2 {
     font-family: var(--heading-font);
     text-align: center;
     font-weight: 900;
-    
+    padding: 20px;
 }
 
 
@@ -271,16 +281,18 @@ div.gallery img {
     text-align: center;
 }
 
-div.gallery{
+div.gallery {
     padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin: 20px;
 }
+
 div.desc {
     padding: 10px;
     text-align: center;
     border-radius: 8px;
     z-index: 1;
-
-
 }
 
 .desc {
@@ -294,10 +306,11 @@ div.desc {
     opacity: 80%;
     font-size: 20px;
     max-width: 200px;
-    
-
 }
 
+section {
+    justify-content: center;
+}
 
 div.gallery:hover {
 
@@ -313,14 +326,42 @@ div.gallery:hover {
     align-items: center;
 
 }
-#map{
+
+#map {
+    max-width: 550px;
+    height: 275px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.mapboxgl-canvas {
+    max-width: 550px;
+    height: 275px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+#photo1 {
     max-width: 550px;
     height: auto;
-    border-radius: 5%;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 30px #777;
+    border-radius: 20px;
 }
-#photo1{
-   max-width: 550px;
-    height: auto;
+
+.mapboxgl-ctrl-attrib-inne {
+    display: none;
+}
+
+section {
+
+    padding-top: 50px;
+}
+
+.input {
+    text-align: center;
+}
+
+#weatherInfo {
+    text-align: center;
 }
