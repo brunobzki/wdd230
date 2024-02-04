@@ -313,3 +313,14 @@ div.gallery:hover {
     align-items: center;
 
 }
+#map{
+    max-width: 550px;
+    height: auto;
+    border-radius: 5%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 30px #777;
+}
+#photo1{
+   max-width: 550px;
+    height: auto;
+}
