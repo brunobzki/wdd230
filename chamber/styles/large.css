@@ -2,16 +2,16 @@
     
 
     .navigation.open  {
-        
-        background-color: #22181C;
-        display: flex;
         align-items: center;
+        background-color: #22181C;
+        display:flex ;
+        margin-top: 50px;
         float: right;
         max-height: 100px;
         border-radius: 80px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         font-size: 20px;
-        
+        width: 400px;
     }
     nav ul {
         display: flex;

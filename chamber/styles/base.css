@@ -38,6 +38,7 @@ nav ul {
 header {
     display: grid;
     grid-template-columns: 100px auto;
+    padding-top: 20px;
 }
 h1{
     text-align: center;
@@ -54,7 +55,7 @@ h1{
     display: flex;
     justify-content: right;
     float: left;
-    max-height: 100px;
+    height: 100px;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
@@ -94,12 +95,13 @@ a {
 
 img.logo {
     max-height: 100px;
-    background-color: #22181C;
-    z-index: 0;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-
+#logo_link{
+    align-items: center;
+    padding: 0;
+}
 .slider-box {
     width: auto;
     margin: 50px auto 50px;
@@ -257,13 +259,6 @@ h2 {
     padding: 20px;
 }
 
-
-#logo_link {
-    z-index: 1;
-    background-color: #22181C;
-    max-height: 100px;
-    border-radius: 20px;
-}
 
 .social a {
     padding: 0;
