@@ -112,10 +112,11 @@ img.logo {
 }
 .slider-box {
     width: auto;
-    margin: 50px auto 50px;
+    margin: 50px 25px 50px;
     overflow: hidden;
     border-radius: 20px;
     z-index: 22;
+
 }
 
 .slider-box ul {
