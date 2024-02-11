@@ -23,7 +23,7 @@
     max-width: 1440px;
     box-sizing: border-box;
     background-blend-mode: color;
-    background: #ebe6e6
+  
 }
 
 #menu {
@@ -70,6 +70,14 @@ h1{
 
 #menu.open::before {
     content: "✖";
+}
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }
 
 a {
