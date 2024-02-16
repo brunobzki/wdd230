@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let decoratedName = "🔘 Bruno Panzacchi";
     let uruguayFlag = "Uruguay";
-    let uruguayFlagImage = `<img src="images/Flag.png" alt="Flag of Uruguay" width="95" height="75"style="vertical-align: middle;">`;
+    let uruguayFlagImage = `<img src="images/Flag.webp" alt="Flag of Uruguay" width="95" height="75"style="vertical-align: middle;">`;
 
     firstParagraph.innerHTML = `&copy; ${currentYear} ${decoratedName} -  ${uruguayFlag} ${uruguayFlagImage}`;
 

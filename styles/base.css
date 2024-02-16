@@ -19,7 +19,9 @@ header {
 
 header img {
     display: inline-block; 
-    vertical-align: middle; 
+    vertical-align: middle;
+    max-width: 250px;
+    box-shadow: #333; 
     
 }
 
@@ -37,6 +39,7 @@ header h1 {
 .navigation ul {
     list-style-type: none; 
     padding: 10px; 
+    margin: 0;
 }
 
 nav a {
@@ -51,7 +54,6 @@ nav a {
 	background: none;
 	color: #000;
  	position: absolute;
-	
 	left: 1rem;
 }
 
@@ -59,7 +61,7 @@ nav a {
 main {
     
     margin: 0 auto; 
-    display: grid;
+    display: inline;
     grid-gap: 20px;
 }
 
@@ -92,6 +94,7 @@ footer {
 	color: #4b4a4a;
 	font-weight: 700;
     border-radius: 8px;
+    padding: 8px;
     
 }
 .navigation a:hover::before{
@@ -128,6 +131,41 @@ h2 {
     font-size: 30px;
     text-align: center;
     font-weight: 900;
+    row-gap: 2/3;
 
 }
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+
+    grid-column: span 2;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    /* Buenas */
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Great Vibes", serif;
+}
+
 }
