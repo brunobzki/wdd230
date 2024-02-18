@@ -48,7 +48,14 @@
           <a class='book' href="contact.html">Join us!!</a>
         </div> 
     </section>
-    <div class="slider-box">
+    <div class="hero">
+      <picture>
+          <source srcset="images/smole.webp" media="(max-width: 400px)">
+          <source srcset="images/medium.webp" media="(max-width: 686px)">
+          <img src="images/large.webp" alt="hero picture" width="1278" height="800">
+      </picture>
+    </div> 
+<!--<div class="slider-box">
       <ul>
         <li>
           <img src="images/slide1.webp" alt="">
@@ -102,7 +109,7 @@
         </li>
       </ul>
 
-    </div>
+    </div>-->
     <h2>External links to the Government Chamber of Commerce of Uruguay</h2>
     <main>
 
@@ -134,16 +141,11 @@
       </div>
     </main>  
       <section>
-        <h2>Enter Location</h2>
+        <h2>Weather information</h2>
         <div class="input">
-            <input type="text" id="locationInput" placeholder="Enter city">
             <button id="submitBtn">Get Weather</button>
         </div>
-      
-      
-          <h2>Weather Information</h2>
-          <div id="weatherInfo">
-                 
+          <div id="weatherInfo">   
         </div>
       
       
@@ -171,6 +173,7 @@
       </div>
     </footer>
     <script src="script/getdates.js"></script>
+    <script src="script/windchill.js"></script>
   </div>
 </body>
 
