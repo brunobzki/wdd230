@@ -222,7 +222,7 @@ footer {
     background-color: rgb(236, 124, 132);
     color:black;
     padding: 25px 20px;
-    min-height: 50px;
+    min-height: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
