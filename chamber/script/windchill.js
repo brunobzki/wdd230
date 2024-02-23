@@ -47,11 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         const copyrightLinksArray = [];
 
-                        copyrightLinks.forEach(link => {
-                            const linkHref = link.href;
-                            copyrightLinksArray.push(linkHref);
-                            console.log(linkHref);
-                        });
+
 
                         weatherInfo.innerHTML = weatherHTML;
                     })
