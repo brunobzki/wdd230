@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     mapboxgl.accessToken = 'pk.eyJ1IjoiYnJ1bm9wYW56YWNjaGkiLCJhIjoiY2xvM2oyZG9mMGZoYjJ3dGR1eXNkZGQzdyJ9.MaO03BaJJRwPI6VT5x-hBw';
 
     submitButton.addEventListener('click', () => {
-        
+
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(position => {
                 const lat = position.coords.latitude;
                 const lon = position.coords.longitude;
-                
+
                 document.getElementById('map').innerHTML = '';
 
                 fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`)
@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         const temperatureKelvin = data.main.temp;
                         const windSpeed = data.wind.speed;
 
-                        
+
                         const temperatureCelsius = temperatureKelvin - 273.15;
 
-                        
+
                         const windChill = 13.12 + 0.6215 * temperatureCelsius - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperatureCelsius * Math.pow(windSpeed, 0.16);
 
                         const weatherHTML = `
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             <p>Wind Speed: ${windSpeed} m/s</p>
                         `;
 
-                        
+
                         map = new mapboxgl.Map({
                             container: 'map',
                             style: 'mapbox://styles/mapbox/satellite-streets-v12',
@@ -44,8 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         const mapContainer = map.getContainer();
                         const copyrightLinks = mapContainer.querySelectorAll('.mapboxgl-ctrl-attrib a');
+
+                        const copyrightLinksArray = [];
+
                         copyrightLinks.forEach(link => {
-                            console.log(link.href);
+                            const linkHref = link.href;
+                            copyrightLinksArray.push(linkHref);
+                            console.log(linkHref);
                         });
 
                         weatherInfo.innerHTML = weatherHTML;
@@ -54,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         weatherInfo.innerHTML = `<p>Error: ${error.message}</p>`;
                     });
             }, error => {
-                
+
                 weatherInfo.innerHTML = '<p>Error getting location.</p>';
             });
         } else {
@@ -62,6 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    
+
     submitButton.click();
 });
