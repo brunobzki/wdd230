@@ -100,7 +100,11 @@ footer {
     padding: 8px;
 
 }
-
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
 .navigation a:hover::before {
     content: "🔶";
 }
