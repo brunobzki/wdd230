@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     updateVisitCount();
-    displayVisitorInfo();
+    updateVisitorInfo();
 
     localStorage.setItem("lastVisitDate", currentDate);
 });
