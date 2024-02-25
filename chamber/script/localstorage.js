@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     var currentDate = new Date();
-    var lastVisitDate = localStorage.getItem("lastVisitDate");
-    var visitCount = localStorage.getItem("visitCount");
+    var lastVisitDate = localStorage.getItem("lastVisitDate") || null;
+    var visitCount = localStorage.getItem("visitCount") || 0;
 
-    if (!lastVisitDate) {
+    if (lastVisitDate === null || lastVisitDate === undefined) {
         displayWelcomeMessage();
     } else {
         currentDate = new Date();
         lastVisitDate = new Date(lastVisitDate);
 
-        var timeDiff = currentDate - lastVisitDate;
+        var timeDiff = currentDate.getTime() - lastVisitDate.getTime();
         var daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
         if (daysDiff < 1) {
