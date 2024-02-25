@@ -34,12 +34,18 @@ function displaySoonMessage() {
 }
 
 function displayLastVisitMessage(daysDiff) {
-    var message = "You last visited " + daysDiff + " day";
-    if (daysDiff !== 1) {
-        message += "s";
-    }
-    updateVisitorInfo(message);
+    var message = "You last visited " + daysDiff + " day" + (daysDiff !== 1 ? "s" : "") + " ago";
+
+
+    var visitMessageElement = document.getElementById("visitMessage");
+
+
+    visitMessageElement.textContent = message;
 }
+
+
+var daysDifference = 3;
+displayLastVisitMessage(daysDifference);
 
 function updateVisitCount() {
     var visitCount = localStorage.getItem("visitCount") || 0;
@@ -55,6 +61,7 @@ function updateVisitorInfo(message) {
 
     todayElement.textContent = currentDate;
     visitsElement.textContent = visitCount;
+
 
     var messageElement = document.createElement("p");
     messageElement.textContent = message;
