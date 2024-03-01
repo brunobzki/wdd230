@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Zeyada&display=swap');
 
+:root {
+    --font-family: 'Karla', sans-serif;
+    --main-font-size: 25px;
+    --main-color: #333;
+    --background-color: #f0f0f0;
+    --header-background-color: rgb(10, 61, 10);
+    --nav-text-color: #030c03;
+}
+
 body {
-    font-family: 'Karla', sans-serif;
-    font-size: 25px;
+    font-family: var(--font-family);
+    font-size: var(--main-font-size);
     line-height: 1.6;
-    color: #333;
-    background-color: #f0f0f0;
+    color: var(--main-color);
+    background-color: var(--background-color);
     justify-content: center;
     align-items: center;
 }
 
 header {
-    background-color: rgb(10, 61, 10);
+    background-color: var(--header-background-color);
     text-align: center;
     padding: 20px;
 }
@@ -20,7 +29,6 @@ header img {
     display: inline-block;
     vertical-align: middle;
     max-width: 250px;
-
 }
 
 header h1 {
@@ -29,10 +37,7 @@ header h1 {
     margin-left: 10px;
     font-family: 'Zeyada', cursive;
     font-size: 50px;
-
 }
-
-
 
 .navigation ul {
     list-style-type: none;
@@ -42,7 +47,7 @@ header h1 {
 
 nav a {
     text-decoration: none;
-    color: #030c03;
+    color: var(--nav-text-color);
     font-size: 25px;
     font-weight: 700;
 }
@@ -120,7 +125,10 @@ footer {
 #menu.open::before {
     content: "✖";
 }
-
+.recordmes{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 @media (max-width: 639px) {
 
 

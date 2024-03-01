@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 230, Bruno Panzacchi, This page focuses on my planning, design, and development of responsive websites using HTML, CSS, and JavaScript">
+    <meta name="author" content="Bruno Panzacchi">
+    <meta property="og:title" content="Bruno Panzacchi websites" />
+    <meta property="og:type" content="Sharing successes" />
+    <meta property="og:url" content="https://brunobzki.github.io/wdd230/" />
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/2/28/Collage_Landmarks_of_Montevideo.jpg" />
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <title> Bruno Panzacchi - WDD 230 - Web Frontend Development</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/me.webp" alt="Photo-Bruno">
+        <h1>Bruno Panzacchi</h1>
+    </header>
+    <main class="formPage">
+        <h1>Form page Lesson 08</h1>
+        <div id="formmessage"></div>
+        <form method="get" action="record.html" class="wf1">
+            <fieldset>
+                <legend> Log in information</legend>
+                <label>User Name* <input type="text" id="username" name="fname" required></label>
+                <label>Password* <input type="password" id="password" name="password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+                <label>Confirm Password* <input type="password" id="confirmpassword" name="confirmpassword"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+                <label>Email* <input type="email" id="email" name="email" placeholder="Example@byui.edu"
+                        pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Course Information</legend>
+                <label>Please Select a star rate </label>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5" />
+                    <label for="star-a"></label>
+
+                    <input type="radio" name="stars" id="star-b" value="4" />
+                    <label for="star-b"></label>
+
+                    <input type="radio" name="stars" id="star-c" value="3" />
+                    <label for="star-c"></label>
+
+                    <input type="radio" name="stars" id="star-d" value="2" />
+                    <label for="star-d"></label>
+
+                    <input type="radio" name="stars" id="star-e" value="1" />
+                    <label for="star-e"></label>
+                </div>
+                <label for="r">Select a value </label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
+
+            <input type="submit" value="Submit your Information">
+
+        </form>
+    </main>
+    <footer>
+        <p id="footerFirstParagraph"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="script/getdates.js"></script>
+    <script src="script/keycomparer.js"></script>
+</body>
+
+</html>
