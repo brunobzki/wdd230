@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Unlock business opportunities and networking in Montevideo with the local Chamber of Commerce. We drive business growth, foster collaboration, and provide essential resources for your company's success in the lively Uruguayan capital. Join us to expand your network and explore new business possibilities in Montevideo.">
+  <meta name="author" content="Bruno Panzacchi">
+  <meta property="og:title" content="Chamber of Commerce of Montevideo City" />
+  <meta property="og:type" content="Business Page" />
+  <meta property="og:url" content="https://brunobzki.github.io/wdd230/" />
+  <meta property="og:image"
+    content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/The_City_%28198895997%29_%28cropped%29.jpg/288px-The_City_%28198895997%29_%28cropped%29.jpg" />
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+  <title> Chamber of Commerce of Montevideo City </title>
+</head>
+
+<body>
+  <div id="content">
+
+    <header>
+
+      <img class="logo" src="images/Montevideo.webp" alt="logo page">
+
+      <button id="menu"></button>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html" class="active"> Home</a></li>
+          <li><a href="discover.html"> Discover </a></li>
+          <li><a href="#"> Page 2 </a></li>
+          <li><a href="#"> Page 3 </a></li>
+        </ul>
+      </nav>
+      <div id="mode">
+        🕶️
+      </div>
+    </header>
+    <section>
+      <h1>Please complete the follow form to join us!!</h1>
+    </section>
+    <div class="hero">
+      <picture>
+        <source srcset="images/join-small" media="(max-width: 400px)">
+        <source srcset="images/join-medium.webp" media="(max-width: 800px)">
+        <img src="images/join.webp" alt="hero picture" width="1278" height="800">
+      </picture>
+    </div>
+    <main class="formPage">
+      <h1>Course Proposal Application</h1>
+      <form method="get" action="thanks.html" class="wf1">
+        <fieldset>
+          <legend> Applicant Information</legend>
+          <label>First Name* <input type="text" name="fname" required></label>
+          <label>Last Name* <input type="text" name="lname" required></label>
+          <label>Phone <input type="tel" name="phone" placeholder="123456789872"></label>
+          <label>Email* <input type="email" name="email" placeholder="Example@text.com" required></label>
+          <label>Website <input type="url" name="url" placeholder="http://"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Course Information</legend>
+          <div>Audience</div>
+          <label><input type="radio" name="audience" value="Beginner"> Beginner</label>
+          <label><input type="radio" name="audience" value="Intermediate"> Intermediate</label>
+          <label><input type="radio" name="audience" value="Advance"> Advance</label>
+
+          <div>Software Needed</div>
+          <label><input type="checkbox" name="editing" value="yes"> Photo Editing </label>
+          <label><input type="checkbox" name="code" value="yes"> Coding </label>
+          <label><input type="checkbox" name="process" value="yes"> Preprocessor </label>
+          <label><input type="checkbox" name="client" value="yes"> FTP Client </label>
+
+        </fieldset>
+        <fieldset>
+          <legend>Funding</legend>
+          <label>Anticipated Completion Date <input type="date" name="completeDate"></label>
+          <label>Course Subject
+            <select name="subject">
+              <option value="">Please Select &#9662;</option>
+              <option value="software">Software Development</option>
+              <option value="creative">Creative Professional</option>
+              <option value="info">Information Technology</option>
+              <option value="data">Data Professional</option>
+              <option value="construction">Construction</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="security">Cyber Security</option>
+              <option value="busniess">Busniess Professional</option>
+            </select>
+
+          </label>
+          <label>How Many Authors <input type="number" name="authors" placeholder="0"></label>
+
+        </fieldset>
+        <input type="submit" value="Propose My Course">
+
+      </form>
+
+
+
+    </main>
+
+
+
+
+    <footer>
+      <p> Montevideo Chamber &copy; </p>
+      <p id="footerFirstParagraph"></p>
+      <p id="lastModified"></p>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/face1.webp" alt="fb icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/insta.webp" alt="instagram icon">
+        </a>
+        <a href="https://googlemaps.com" target="_blank">
+          <img src="images/ubica.webp" alt="Location icon">
+        </a>
+      </div>
+    </footer>
+    <script src="script/getdates.js"></script>
+    <script src="script/windchill.js"></script>
+    <script src="script/localstorage.js"></script>
+  </div>
+</body>
+
+</html>
