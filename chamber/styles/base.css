@@ -533,7 +533,7 @@ main.page-discover {
     font-size: 0.9rem;
 
 }
-.wf1 input[type="textarea"] {
+textarea{
     background-color: var(--accent2-color);
     display: block;
     border: solid 1px #666;
@@ -549,9 +549,7 @@ main.page-discover {
    
 }
 
-.wf1 input[type="textarea"]:focus {
-    outline: none;
-}    
+ 
 .wf1 input[type="text"],
 .wf1 input[type="password"],
 .wf1 input[type="email"],
