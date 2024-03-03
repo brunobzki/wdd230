@@ -533,26 +533,33 @@ main.page-discover {
     font-size: 0.9rem;
 
 }
-.wf1 input[type="textarea"]{
-    background-color: antiquewhite;
+.wf1 input[type="textarea"] {
+    background-color: var(--accent2-color);
     display: block;
     border: solid 1px #666;
     border-radius: 6px;
     padding: .75rem;
     color: #333;
     width: 100%;
-    height: 100px;
+    height: 200px;
     max-width: 400px;
-    appearance: none; 
+    appearance: none;
+    text-align: start;
+    box-sizing: border-box;
+   
 }
+
+.wf1 input[type="textarea"]:focus {
+    outline: none;
+}    
 .wf1 input[type="text"],
 .wf1 input[type="password"],
 .wf1 input[type="email"],
 .wf1 input[type="tel"],
 .wf1 select
 {
-    background-color: antiquewhite;
-    display: block;
+    background-color: var(--accent2-color);
+    display: flex;
     border: solid 1px #666;
     border-radius: 6px;
     padding: .75rem;

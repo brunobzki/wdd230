@@ -22,7 +22,7 @@ const modeButton = document.querySelector("#mode");
 const main = document.querySelector("#content");
 const menuButton = document.querySelector("#menu");
 const infobackground = document.querySelector(".data")
-const joinbackground = document.querySelector("div")
+const joinbackground = document.querySelector("fieldset")
 
 modeButton.addEventListener("click", () => {
   if (modeButton.textContent.includes("🕶️")) {
@@ -38,7 +38,7 @@ modeButton.addEventListener("click", () => {
     main.style.color = "#000";
     menuButton.style.color = "#000";
     modeButton.textContent = "🕶️";
-    infobackground.style.background = "#a9a9a952"
+    infobackground.style.background = "#fff"
     joinbackground.style.background = "#fff";
     joinbackground.style.color = "#000"
 
