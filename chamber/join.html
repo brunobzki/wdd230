@@ -32,7 +32,7 @@
       <button id="menu"></button>
       <nav class="navigation">
         <ul>
-          <li><a href="index.html" class="active"> Home</a></li>
+          <li><a href="index.html"> Home</a></li>
           <li><a href="discover.html"> Discover </a></li>
           <li><a href="#"> Page 2 </a></li>
           <li><a href="#"> Page 3 </a></li>
@@ -47,7 +47,7 @@
     </section>
     <div class="hero">
       <picture>
-        <source srcset="images/join-small" media="(max-width: 400px)">
+        <source srcset="images/join-small" media="(max-width: 600px)">
         <source srcset="images/join-medium.webp" media="(max-width: 800px)">
         <img src="images/join.webp" alt="hero picture" width="1278" height="800">
       </picture>
@@ -56,19 +56,19 @@
       <h1>Course Proposal Application</h1>
       <form method="get" action="thanks.html" class="wf1">
         <fieldset>
-          <legend> Applicant Information</legend>
-          <label>First Name* <input type="text" name="fname" required></label>
-          <label>Last Name* <input type="text" name="lname" required></label>
+          <legend> Personal Data</legend>
+          <label>First Name* <input type="text" name="fname" id="name" required></label>
+          <label>Last Name* <input type="text" name="lname" id="lname" required></label>
           <label>Phone <input type="tel" name="phone" placeholder="123456789872"></label>
           <label>Email* <input type="email" name="email" placeholder="Example@text.com" required></label>
-          <label>Website <input type="url" name="url" placeholder="http://"></label>
         </fieldset>
         <fieldset>
-          <legend>Course Information</legend>
+          <legend>Business/organization Information</legend>
           <div>Audience</div>
-          <label><input type="radio" name="audience" value="Beginner"> Beginner</label>
-          <label><input type="radio" name="audience" value="Intermediate"> Intermediate</label>
-          <label><input type="radio" name="audience" value="Advance"> Advance</label>
+          <label>The applicant's title or position within their organization <input type="text" id="position" name="position"
+            pattern="[a-zA-Z -]{7,}" required></label>
+          <label>Business/organization's name <input type="text" name="bname" id="bname" required></label>  
+         
 
           <div>Software Needed</div>
           <label><input type="checkbox" name="editing" value="yes"> Photo Editing </label>
@@ -79,23 +79,9 @@
         </fieldset>
         <fieldset>
           <legend>Funding</legend>
-          <label>Anticipated Completion Date <input type="date" name="completeDate"></label>
-          <label>Course Subject
-            <select name="subject">
-              <option value="">Please Select &#9662;</option>
-              <option value="software">Software Development</option>
-              <option value="creative">Creative Professional</option>
-              <option value="info">Information Technology</option>
-              <option value="data">Data Professional</option>
-              <option value="construction">Construction</option>
-              <option value="manufacturing">Manufacturing</option>
-              <option value="security">Cyber Security</option>
-              <option value="busniess">Busniess Professional</option>
-            </select>
-
-          </label>
-          <label>How Many Authors <input type="number" name="authors" placeholder="0"></label>
-
+          <label><input type="radio" name="audience" value="Intermediate"> Intermediate</label>
+          <label><input type="radio" name="audience" value="Advance"> Advance</label>
+         
         </fieldset>
         <input type="submit" value="Propose My Course">
 
