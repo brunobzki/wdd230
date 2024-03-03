@@ -101,4 +101,11 @@
         grid-template-columns: 1fr;
         grid-gap: 32px;
     }
+    .membership-benefits {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr;
+        
+        
+    }
 }
