@@ -94,8 +94,13 @@
                 {
                     "url": "form.html",
                     "title": "Form - Home page"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets page"
                 }
             ]
         }
+        
     ]
 }
