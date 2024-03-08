@@ -22,7 +22,7 @@
             "lesson": "03",
             "links": [
                 {
-                    "url": "images/combinator.jpg",
+                    "url": "images/Exercise.webp",
                     "title": "Combinator"
                 }
             ]
@@ -70,7 +70,7 @@
             "lesson": "07",
             "links": [
                 {
-                    "url": "leccion07/lazyload.html",
+                    "url": "lesson07/lazyload.html",
                     "title": "Lesson 07"
                 }
             ]
@@ -88,7 +88,7 @@
             "lesson": "09",
             "links": [
                 {
-                    "url": "form/index.html",
+                    "url": "form-start/Form-start/index.html",
                     "title": "Form"
                 },
                 {
