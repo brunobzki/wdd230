@@ -1,0 +1,101 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/media-query.html",
+                    "title": "Lesson 01"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Lesson 02"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/combinator.jpg",
+                    "title": "Combinator"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Bruno-Panzacchi/pen/yLwzzEL?editors=1101",
+                    "title": "Pseudo elements link"
+                },
+                {
+                    "url": "https://codepen.io/Bruno-Panzacchi/pen/QWoOwom",
+                    "title": "Responsive Navigation"
+                },
+                {
+                    "url": "https://codepen.io/Bruno-Panzacchi/pen/GReQyoz",
+                    "title": "CSS Pseudo-Classes"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Lesson 05"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "lesson6/responsive-images.html",
+                    "title": "Lesson 06"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "leccion07/lazyload.html",
+                    "title": "Lesson 07"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Lesson 08"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "form/index.html",
+                    "title": "Form"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form - Home page"
+                }
+            ]
+        }
+    ]
+}
