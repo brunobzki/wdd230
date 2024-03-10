@@ -2,8 +2,8 @@ const baseURL = "https://brunobzki.github.io/wdd230";
 const linksURL = "https://brunobzki.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector('#cards');
 const display = document.querySelector("article");
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
+const gridbutton = document.querySelector("#grida");
+const listbutton = document.querySelector("#lista");
 
 async function getMembers() {
   try {
@@ -54,16 +54,16 @@ function displayMembers(members) {
 }
 
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
+	
+	display.classList.add("grida");
+	display.classList.remove("lista");
 });
 
 listbutton.addEventListener("click", showList); 
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+	display.classList.add("lista");
+	display.classList.remove("grida");
 }
 
 
