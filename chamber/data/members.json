@@ -1,0 +1,76 @@
+{
+    "members": [
+      {
+        "name": "El Observador",
+        "address": "La Cumparsita 1475",
+        "phone number": "(+598) 2418 9086 - 0800 8218",
+        "url": "https://www.elobservador.com.uy/",
+        "image": "https://brunobzki.github.io/wdd230/chamber/images/elobservador.jfif",
+        "membership level": "1"
+      },
+      {
+        "name": "El Pais",
+        "address": "Zelmar Michelini 1287",
+        "phone number": "(+598) 1234 567",
+        "url": "https://www.elpais.com.uy/informacion/portada",
+        "image": "https://brunobzki.github.io/wdd230/chamber/images/elpais.png",
+        "membership level": "2"
+      },
+      {
+        "name": "Shoping Tres Cruses",
+        "address": "Bvar. Artigas 1825",
+        "phone number": "Tel.: (+598) 2408 8601",
+        "url": "https://www.trescruces.com.uy/",
+        "image": "https://brunobzki.github.io/wdd230/chamber/images/tresCruces.jfif",
+        "membership level": "3"
+      },
+      {
+        "name": "Intendencia de Montevideo",
+        "address": " Av. 18 de Julio 1360",
+        "phone number": " (+598) 92 250 260",
+        "url": "https://montevideo.gub.uy/",
+        "image": "https://brunobzki.github.io/wdd230/chamber/images/intendencia.png",
+        "membership level": "4"
+      },
+      {
+        "name": "Teatro Solis",
+        "address": "Reconquista S/N esq. Bartolomé Mitre",
+        "phone number": "(+598) 1950.3323 - 1950.3325",
+        "url": "https://www.teatrosolis.org.uy/",
+        "image": "https://brunobzki.github.io/wdd230/chamber/images/solis.jfif",
+        "membership level": "1"
+      },
+      {
+        "name": "Movie Montevideo",
+        "address": "Shopping Portones",
+        "phone number": "1986-05-02",
+        "url": "https://www.movie.com.uy/",
+        "image": "https://brunobzki.github.io/wdd230/chamber/images/movie.jfif",
+        "membership level": "2"
+      },
+      {
+        "name": "Cutcsa",
+        "address": " Av. José Pedro Varela 3385",
+        "phone number": "1986-05-02",
+        "url": "https://www.cutcsa.com.uy/",
+        "image": "https://brunobzki.github.io/wdd230/chamber/images/cutcsa.png",
+        "membership level": "3"
+      },
+      {
+        "name": "Buquebus",
+        "address": "Av. Antártida Argentina 821",
+        "phone number": "+54-11-2493-5214",
+        "url": "https://www.buquebusturismo.com/",
+        "image": "https://brunobzki.github.io/wdd230/chamber/images/buquebus.jfif",
+        "membership level": "2"
+      },
+      {
+        "name": "Museo del Carnaval",
+        "address": " Rambla 25 de Agosto de 1825",
+        "phone number": "(598) 2916 5493 ",
+        "url": "https://www.saladelmuseo.com.uy/",
+        "image": "https://brunobzki.github.io/wdd230/chamber/images/museo.png",
+        "membership level": "3"
+      }
+    ]
+  }

@@ -26,15 +26,15 @@
   <div id="content">
 
     <header>
-
-      <img class="logo" src="images/Montevideo.webp" alt="logo page">
-
+      
+        <img class="logo" src="images/Montevideo.webp" alt="logo page">
+      
       <button id="menu"></button>
       <nav class="navigation">
         <ul>
-          <li><a href="index.html"> Home</a></li>
+          <li><a href="index.html" class="active"> Home</a></li>
           <li><a href="discover.html"> Discover </a></li>
-          <li><a href="directory.html"> Directory </a></li>
+          <li><a href="#"> Page 2 </a></li>
           <li><a href="#"> Page 3 </a></li>
         </ul>
       </nav>
@@ -42,20 +42,28 @@
         🕶️
       </div>
     </header>
-    <div class="hero">
-      <picture>
-        <source srcset="images/join-small" media="(max-width: 300px)">
-        <source srcset="images/join-medium.webp" media="(max-width: 800px)">
-        <img src="images/join.webp" alt="hero picture" width="1278" height="800">
-      </picture>
-    </div>
-    <main class="formPage">
-      <h1>Confirmation message</h1>
-            <p>Thanks for complete the form. We will get back to you within a week with a response.</p>
-    
+    <section>
+      <h1>Welcome to the Montevideo city Chamber of Commerce</h1>
+      <div class='button-box'>
+        <a class='book' href="join.html">Join us!!</a>
+      </div>
+    </section>
+
+    <main>
+
+      <div class="menu">
+        <button id="grid">⏹️Grid</button>
+        <button id="list">📄List</button>
+      </div>
+      <div id="cards"></div>
+  
+      <hr>
+      <article class="grid">
+     
+      </article>
+        
     </main>
-
-
+   
 
 
     <footer>
@@ -75,10 +83,8 @@
       </div>
     </footer>
     <script src="script/getdates.js"></script>
-    <script src="script/windchill.js"></script>
+    <script src="data/directory.js"></script>
     <script src="script/localstorage.js"></script>
-    <script src="script/submit.js"></script>
-    
   </div>
 </body>
 
