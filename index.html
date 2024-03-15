@@ -10,7 +10,9 @@
     <meta property="og:title" content="Bruno Panzacchi websites" />
     <meta property="og:type" content="Sharing successes" />
     <meta property="og:url" content="https://brunobzki.github.io/wdd230/" />
-    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/2/28/Collage_Landmarks_of_Montevideo.jpg" />
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/2/28/Collage_Landmarks_of_Montevideo.jpg" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -33,12 +35,12 @@
             <li><a href="chamber/">Chamber</a></li>
             <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
-            
-            
+
+
         </ul>
     </nav>
 
-    
+
     <main>
 
         <div class="hero">
@@ -60,9 +62,18 @@
 
         <section class="card">
 
-            <h3>Information</h3>
-            <p>Weather: [Placeholder]</p>
-            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+           <h3>Information</h3>
+            <section>
+                
+                <div id="weatherInfo">
+                </div>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+
+
+                <h2>Map</h2>
+                <div id="map">
+                
+            </section>
 
         </section>
 
@@ -81,7 +92,8 @@
     <script src="script/getdates.js"></script>
     <script src="script/visitcounter.js"></script>
     <script src="data/scripts/links.js"></script>
-    
+    <script src="script/weather.js"></script>
+
 </body>
 
 </html>

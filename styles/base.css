@@ -129,6 +129,29 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
 }
+#map {
+    max-width: 550px;
+    height: 275px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.mapboxgl-canvas {
+    max-width: 550px;
+    height: 275px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+#weatherInfo {
+    text-align: center;
+}
+.mapboxgl-control-container {
+    display: none;
+}
+
+
 @media (max-width: 639px) {
 
 
@@ -185,5 +208,7 @@ footer {
         font-size: 1.5rem;
         font-family: "Great Vibes", serif;
     }
+
+    
 
 }
