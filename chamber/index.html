@@ -26,9 +26,9 @@
   <div id="content">
 
     <header>
-      
-        <img class="logo" src="images/Montevideo.webp" alt="logo page">
-      
+
+      <img class="logo" src="images/Montevideo.webp" alt="logo page">
+
       <button id="menu"></button>
       <nav class="navigation">
         <ul>
@@ -48,13 +48,20 @@
         <a class='book' href="join.html">Join us!!</a>
       </div>
     </section>
-<!--   <div class="hero">
+    <section>
+      <div id="banner" style="display: none;">
+        <p>Welcome visitors!<br>We invite you to attend the chamber of commerce meet and greet with us<br>Wednesday at
+          7:00 p.m.</p>
+        <button id="closeBanner">Close</button>
+      </div>
+    </section>
+    <!--   <div class="hero">
       <picture>
         <source srcset="images/smole.webp" media="(max-width: 400px)">
         <source srcset="images/medium.webp" media="(max-width: 686px)">
         <img src="images/large.webp" alt="hero picture" width="1278" height="800">
       </picture>
-    </div>--> 
+    </div>-->
     <div class="slider-box">
       <ul>
         <li>
@@ -142,12 +149,17 @@
     </main>
     <section>
       <h2>Weather information</h2>
-      <div class="input">
-        <button id="submitBtn">Get Weather</button>
-      </div>
-      <div id="weatherInfo">
-      </div>
-      <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+
+      <div id="weatherInfo"></div>
+      <div id="windchill"></div>
+      <figure>
+        <img id="weather-i" src="https://openweathermap.org/img/w/10d.png" alt="">
+        <figcaption></figcaption>
+      </figure>
+      <div id="forecast-container"></div>
+      <p><span class="label">Visit counter: </span><span class="visits"></span></p>
+      <p id="visitMessage"></p>
+      <p><span class="label"></span><span id="visitor"></span></p>
 
 
       <h2>Map</h2>
@@ -176,6 +188,7 @@
     <script src="script/getdates.js"></script>
     <script src="script/windchill.js"></script>
     <script src="script/localstorage.js"></script>
+    <script src="script/banner.js"></script>
   </div>
 </body>
 
