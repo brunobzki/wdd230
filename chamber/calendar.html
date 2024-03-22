@@ -8,7 +8,7 @@
   <meta name="description"
     content="Unlock business opportunities and networking in Montevideo with the local Chamber of Commerce. We drive business growth, foster collaboration, and provide essential resources for your company's success in the lively Uruguayan capital. Join us to expand your network and explore new business possibilities in Montevideo.">
   <meta name="author" content="Bruno Panzacchi">
-  <meta property="og:title" content="Chamber of Commerce of Montevideo City" />
+  <meta property="og:title" content="Directory of Commerce of Montevideo City" />
   <meta property="og:type" content="Business Page" />
   <meta property="og:url" content="https://brunobzki.github.io/wdd230/" />
   <meta property="og:image"
@@ -18,8 +18,8 @@
   <link rel="stylesheet" href="styles/medium.css">
   <link rel="stylesheet" href="styles/large.css">
   <link rel="icon" href="favicon.ico">
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
-  <title> Chamber of Commerce of Montevideo City </title>
+  
+  <title> Directory of members of Commerce of Montevideo Chamber </title>
 </head>
 
 <body>
@@ -32,31 +32,28 @@
       <button id="menu"></button>
       <nav class="navigation">
         <ul>
-          <li><a href="index.html"> Home</a></li>
+          <li><a href="index.html" > Home</a></li>
           <li><a href="discover.html"> Discover </a></li>
-          <li><a href="directory.html"> Directory </a></li>
-          <li><a href="calendar.html"> Calendar </a></li>
+          <li><a href="directory.html" > Directory </a></li>
+          <li><a href="calendar.html" class="active"> Calendar </a></li>
         </ul>
       </nav>
       <div id="mode">
         🕶️
       </div>
     </header>
-    <div class="hero">
-      <picture>
-        <source srcset="images/join-small" media="(max-width: 300px)">
-        <source srcset="images/join-medium.webp" media="(max-width: 800px)">
-        <img src="images/join.webp" alt="hero picture" width="1278" height="800">
-      </picture>
-    </div>
-    <main class="formPage">
-      <h1>Confirmation message</h1>
-            <p>Thanks for complete the form. We will get back to you within a week with a response.</p>
-    
+    <section>
+      <h1>Directory of Montevideo city Chamber of Commerce</h1>
+      <div class='button-box'>
+        <a class='book' href="join.html">Join us!!</a>
+      </div>
+    </section>
+
+    <main class="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?src=23dd3cfd40dedf930eec997c7409f4e86d7191795f90f5cc26936b930c6927c8%40group.calendar.google.com&ctz=America%2FMontevideo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+
     </main>
-
-
-
 
     <footer>
       <p> Montevideo Chamber &copy; </p>
@@ -75,10 +72,7 @@
       </div>
     </footer>
     <script src="script/getdates.js"></script>
-    <script src="script/windchill.js"></script>
-    <script src="script/localstorage.js"></script>
-    <script src="script/submit.js"></script>
-    
+    <script src="data/directory.js"></script>
   </div>
 </body>
 
