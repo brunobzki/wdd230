@@ -23,6 +23,7 @@ const main = document.querySelector("#content");
 const menuButton = document.querySelector("#menu");
 const infobackground = document.querySelector(".data")
 const joinbackground = document.querySelector("fieldset")
+const directory = document.querySelector(".directory")
 
 modeButton.addEventListener("click", () => {
   if (modeButton.textContent.includes("🕶️")) {
@@ -30,9 +31,10 @@ modeButton.addEventListener("click", () => {
     main.style.color = "#fff";
     menuButton.style.color = "#fff";
     modeButton.textContent = "🔆";
-    infobackground.style.background = "#000";
+    infobackground.style.background.color = "#000";
     joinbackground.style.background = "#000";
     joinbackground.style.color = "#fff";
+    directory.style.background.color = "#ddd";
   } else {
     main.style.background = "#eee";
     main.style.color = "#000";
@@ -40,7 +42,8 @@ modeButton.addEventListener("click", () => {
     modeButton.textContent = "🕶️";
     infobackground.style.background = "#fff"
     joinbackground.style.background = "#fff";
-    joinbackground.style.color = "#000"
+    joinbackground.style.color = "#000";
+    directory.style.background = "#fff";
 
   }
 });
